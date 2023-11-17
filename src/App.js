@@ -24,24 +24,26 @@ function App() {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
 
   const handleAnswerClick = (selectedOption) => {
     setSelectedOption(selectedOption);
+    setShowAnswer(true);
 
     if (selectedOption === questions[currentQuestion].correctAnswer) {
       setScore(score + 1);
     }
-
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setTimeout(() => {
-        setCurrentQuestion(nextQuestion);
-        setSelectedOption(null); // Reset selected option for the next question
-      }, 1000);
-    } else {
-      setShowScore(true);
-    }
   };
+
+  const nextQuestion = () => {
+    if (currentQuestion + 1 < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      setShowAnswer(false);
+    }else{
+      setShowScore(true);
+      setShowAnswer(false);
+    };
+  }
 
   const restartQuiz = () => {
     setCurrentQuestion(0);
@@ -63,24 +65,31 @@ function App() {
             <p>{questions[currentQuestion].question}</p>
           </div>
           <div className="answer-section">
-        {questions[currentQuestion].options.map((option, index) => (
-          <button
-            key={index}
-            onClick={() => handleAnswerClick(option)}
-            className={
-              showScore
-                ? option === questions[currentQuestion].correctAnswer
-                  ? 'correct'
-                  : 'incorrect'
-                : ''
-            }
-          >
+            {questions[currentQuestion].options.map((option, index) => (
+            <button
+              key={index}
+              onClick={() => handleAnswerClick(option)}
+              className={
+                  showAnswer 
+                    ? option === questions[currentQuestion].correctAnswer 
+                      ? 'correct'
+                      : 'incorrect' 
+                  : 'answer'
+              }
+            >
             {option}
           </button>
         ))}
       </div>
-        </>
+      </>
       )}
+    <button
+      className = 'next-question'
+      onClick={() => nextQuestion()}
+      style ={{display: showAnswer ? 'block' : 'none'}}    
+    >
+      Next Question
+    </button>
     </div>
   );
 }

@@ -25,25 +25,48 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #728f97;
 }
 
 .app{
   border: 2px solid;
   margin: auto;
   width: 50%;
-  padding: 10px;
+  height: 200px;
+  padding: 10px 0;
   text-align: center;
-  margin-top: 20px;
+  vertical-align: middle;
   box-shadow: 10px 5px 5px rgb(82, 77, 77);
+  background-color: rgb(206, 219, 200);
+  margin-top: 200px;
 }
 
 .correct{
+  border-radius: 15%;
+  margin: 10px;
   color: green;
+  background-color:rgb(159, 255, 171)8;
 }
 
 .incorrect{
+  border-radius: 15%;
+  margin: 10px;
   color:red;
+  background-color: #ff7878;
+}
+
+.answer{
+  border-radius: 15%;
+  margin: 10px;
+  background-color: azure;
+}
+
+.next-question{
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @keyframes App-logo-spin {
