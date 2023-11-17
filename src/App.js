@@ -27,12 +27,14 @@ function App() {
   const [showAnswer, setShowAnswer] = useState(false);
 
   const handleAnswerClick = (selectedOption) => {
+    if (showAnswer===false){
     setSelectedOption(selectedOption);
     setShowAnswer(true);
 
     if (selectedOption === questions[currentQuestion].correctAnswer) {
       setScore(score + 1);
     }
+  }
   };
 
   const nextQuestion = () => {
@@ -59,7 +61,7 @@ function App() {
           <button onClick={restartQuiz}>Restart Quiz</button>
         </div>
       ) : (
-        <>
+        <div className="quiz -section">
           <div className="question-section">
             <h2>Question {currentQuestion + 1}</h2>
             <p>{questions[currentQuestion].question}</p>
@@ -81,7 +83,7 @@ function App() {
           </button>
         ))}
       </div>
-      </>
+      </div>
       )}
     <button
       className = 'next-question'
