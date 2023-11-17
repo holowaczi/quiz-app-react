@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.app{
+  border: 2px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 10px 5px 5px rgb(82, 77, 77);
+}
+
+.correct{
+  color: green;
+}
+
+.incorrect{
+  color:red;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
