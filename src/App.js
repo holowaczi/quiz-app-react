@@ -3,20 +3,80 @@ import './App.css';
 
 const questions = [
   {
-    question: 'What is the capital of France?',
-    options: ['Berlin', 'Madrid', 'Paris', 'Rome'],
-    correctAnswer: 'Paris',
+    "question": "What is the longest river in the world?",
+    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "correctAnswer": "Amazon"
   },
   {
-    question: 'Which programming language is this app built with?',
-    options: ['Java', 'Python', 'JavaScript', 'C++'],
-    correctAnswer: 'JavaScript',
+    "question": "Name the capital city of Australia.",
+    "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+    "correctAnswer": "Canberra"
   },
   {
-    question: 'What is the largest planet in our solar system?',
-    options: ['Earth', 'Jupiter', 'Mars', 'Venus'],
-    correctAnswer: 'Jupiter',
+    "question": "Which continent is known as the 'Land of the Rising Sun'?",
+    "options": ["Asia", "Europe", "Australia", "Africa"],
+    "correctAnswer": "Asia"
   },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Fe", "Cu"],
+    "correctAnswer": "Au"
+  },
+  {
+    "question": "Who developed the theory of general relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking"],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Jupiter", "Mars", "Venus"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "question": "In which year did World War II end?",
+    "options": ["1943", "1945", "1950", "1939"],
+    "correctAnswer": "1945"
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "options": ["John Adams", "Thomas Jefferson", "George Washington", "James Madison"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "question": "Name one of the Seven Wonders of the Ancient World.",
+    "options": ["Great Wall of China", "Pyramids of Giza", "Taj Mahal", "Petra"],
+    "correctAnswer": "Pyramids of Giza"
+  },
+  {
+    "question": "What is the highest-grossing film of all time?",
+    "options": ["Avatar", "Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"],
+    "correctAnswer": "Avengers: Endgame"
+  },
+  {
+    "question": "Who played Neo in 'The Matrix'?",
+    "options": ["Keanu Reeves", "Brad Pitt", "Tom Cruise", "Will Smith"],
+    "correctAnswer": "Keanu Reeves"
+  },
+  {
+    "question": "Which animated film features a character named Simba?",
+    "options": ["Finding Nemo", "The Lion King", "Toy Story", "Frozen"],
+    "correctAnswer": "The Lion King"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["Yuan", "Won", "Yen", "Ringgit"],
+    "correctAnswer": "Yen"
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7"
+  },
+  {
+    "question": "What is the capital of South Africa?",
+    "options": ["Cairo", "Lagos", "Nairobi", "Pretoria"],
+    "correctAnswer": "Pretoria"
+  }
 ];
 
 function App() {
@@ -57,8 +117,8 @@ function App() {
     <div className="app">
       {showScore ? (
         <div className="score-section">
-          <h2>Your Score: {score}</h2>
-          <button onClick={restartQuiz}>Restart Quiz</button>
+          <h2>Your Score: {score}/{questions.length}</h2>
+          <button className="restart" onClick={restartQuiz}>Restart Quiz</button>
         </div>
       ) : (
         <div className="quiz -section">
