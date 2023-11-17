@@ -69,11 +69,18 @@ function App() {
               onClick={() => handleAnswerClick(option)}
               className={
                   showAnswer 
-                    ? option === questions[currentQuestion].correctAnswer 
-                      ? 'correct'
-                      : 'incorrect' 
+                    ? selectedOption === questions[currentQuestion].correctAnswer
+                      ? option === selectedOption
+                        ? 'correct'
+                        : 'answer'
+                      : option === selectedOption
+                        ? 'incorrect'
+                        : option === questions[currentQuestion].correctAnswer
+                          ? 'correct'
+                          : 'answer'
                   : 'answer'
               }
+              disabled = {showAnswer}
             >
             {option}
           </button>

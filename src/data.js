@@ -1,10 +1,5 @@
 const Allquestions = [
     {
-      "question": "What is the longest river in the world?",
-      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-      "correctAnswer": "Amazon"
-    },
-    {
       "question": "Name the capital city of Australia.",
       "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
       "correctAnswer": "Canberra"
@@ -125,11 +120,6 @@ const Allquestions = [
         "correctAnswer": "Mandarin"
       },
       {
-        "question": "What is the largest ocean on Earth?",
-        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
-        "correctAnswer": "Pacific"
-      },
-      {
         "question": "Who wrote 'Romeo and Juliet'?",
         "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
         "correctAnswer": "William Shakespeare"
@@ -143,6 +133,81 @@ const Allquestions = [
         "question": "Which planet is known as the 'Red Planet'?",
         "options": ["Earth", "Mars", "Venus", "Jupiter"],
         "correctAnswer": "Mars"
+      },
+      {
+        "question": "What is the largest island in the world?",
+        "options": ["Greenland", "Australia", "Borneo", "Madagascar"],
+        "correctAnswer": "Greenland"
+      },
+      {
+        "question": "Which famous scientist developed the theory of evolution by natural selection?",
+        "options": ["Isaac Newton", "Charles Darwin", "Marie Curie", "Galileo Galilei"],
+        "correctAnswer": "Charles Darwin"
+      },
+      {
+        "question": "What is the capital of Canada?",
+        "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+        "correctAnswer": "Ottawa"
+      },
+      {
+        "question": "In Roman numerals, what does 'X' represent?",
+        "options": ["10", "50", "100", "500"],
+        "correctAnswer": "10"
+      },
+      {
+        "question": "Who painted 'Starry Night'?",
+        "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+        "correctAnswer": "Vincent van Gogh"
+      },
+      {
+        "question": "What is the currency of India?",
+        "options": ["Rupiah", "Ringgit", "Rupee", "Yen"],
+        "correctAnswer": "Rupee"
+      },
+      {
+        "question": "In which year did the Berlin Wall fall, symbolizing the end of the Cold War?",
+        "options": ["1985", "1987", "1989", "1991"],
+        "correctAnswer": "1989"
+      },
+      {
+        "question": "Which ocean is the largest by surface area?",
+        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+        "correctAnswer": "Pacific"
+      },
+      {
+        "question": "Who wrote 'The Great Gatsby'?",
+        "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "George Orwell", "Jane Austen"],
+        "correctAnswer": "F. Scott Fitzgerald"
+      },
+      {
+        "question": "What is the main ingredient in guacamole?",
+        "options": ["Tomato", "Avocado", "Onion", "Lime"],
+        "correctAnswer": "Avocado"
+      },
+      {
+        "question": "Which planet is known as the 'Red Planet'?",
+        "options": ["Earth", "Mars", "Venus", "Jupiter"],
+        "correctAnswer": "Mars"
+      },
+      {
+        "question": "What is the largest species of big cat?",
+        "options": ["Lion", "Tiger", "Leopard", "Jaguar"],
+        "correctAnswer": "Tiger"
+      },
+      {
+        "question": "Which river is the longest in the world?",
+        "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+        "correctAnswer": "Nile"
+      },
+      {
+        "question": "What is the main gas that makes up the Earth's atmosphere?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+        "correctAnswer": "Nitrogen"
+      },
+      {
+        "question": "In Greek mythology, who is the goddess of wisdom?",
+        "options": ["Athena", "Aphrodite", "Hera", "Demeter"],
+        "correctAnswer": "Athena"
       }
   ];
 
