@@ -11,9 +11,10 @@ const shuffleArray = (array) => {
 
 const Allquestions = require('./data.js');
 
-const questions = shuffleArray(Allquestions).slice(0, 10);
+const first_questions = shuffleArray(Allquestions).slice(0, 10);
 
 function App() {
+  const [questions, setQuestions] = useState(first_questions);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -45,6 +46,7 @@ function App() {
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
+    setQuestions(shuffleArray(Allquestions).slice(0,10));
   };
 
   return (
